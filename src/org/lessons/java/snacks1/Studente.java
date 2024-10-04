@@ -15,17 +15,18 @@ public class Studente {
 	
 	//definisco costruttore
 	Studente(){
-		name = input.next();
-		surname = input.next();
-		age = input.nextInt();
-		info = getStudentInfo();
+		this.name = input.next();
+		this.surname = input.next();
+		this.age = input.nextInt();
+		this.info = getStudentInfo();
 
 	}
 	
-	String getStudentInfo() {
-		String info = name + " " + surname + ", " + String.valueOf(age);
+	private String getStudentInfo() {
+		this.info = name + " " + surname + ", " + String.valueOf(age);
 		return info;
 	}
+
 	
 }
 

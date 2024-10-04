@@ -1,29 +1,34 @@
 package org.lessons.java.snacks1;
 
 
-public class RegistroStudenti extends Studente{
-
-	String [] Studente;
+public class RegistroStudenti extends Studente2{
+	
+	public String nameRegistro;
+	private Studente2 [] studenti;
 	
 	
-	RegistroStudenti(){
+	RegistroStudenti(String name){
 		
-		this.aggiungiUtente(name, surname, age);
+		nameRegistro = name;
 		
-	}
-	
-	public void aggiungiUtente(String name, String surname, int age) {
-		
-		this.name = name;
-		this.surname = surname;
-		this.age = age;
-
 	}
 
 	
-	public void stampaRegistro() {
-		for (int i = 0; i < Studente.length; i++) {
-
+	//meotodo stampa
+	void stampaRegistro() {
+		for (int i = 0; i < studenti.length; i++) {
+			System.out.print(studenti[i].name);
 		}
 	}
+	
+	public void setUtente(String name, String surname) {
+		this.name = name;
+		this.surname = surname;
+	}
+	
+	public String getUtente() {
+		return (name + surname);
+	}
+
+	
 }

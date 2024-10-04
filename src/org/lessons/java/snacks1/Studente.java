@@ -19,8 +19,9 @@ public class Studente {
 		this.surname = input.next();
 		this.age = input.nextInt();
 		this.info = getStudentInfo();
-
+		
 	}
+
 	
 
 	
@@ -28,14 +29,7 @@ public class Studente {
 		this.info = name + " " + surname + ", " + String.valueOf(age);
 		return info;
 	}
-	
-	
-	public void aggiungiUtente(String name, String surname, int age) {
-		
-		this.name = name;
-		this.surname = surname;
-		this.age = age;
-	}
+
 
 	
 }

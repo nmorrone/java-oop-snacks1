@@ -6,9 +6,10 @@ public class TestMainUtilities3 {
 		
 		RegistroStudenti registro1 = new RegistroStudenti();
 		
-		Studente primoAlunno = new Studente();
+		registro1.aggiungiUtente("Nicola", "Morrone", 28);
 		
 		
+		System.out.println(registro1.Studente[0]);
 	}
 
 }

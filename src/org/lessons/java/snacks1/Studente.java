@@ -22,9 +22,19 @@ public class Studente {
 
 	}
 	
+
+	
 	private String getStudentInfo() {
 		this.info = name + " " + surname + ", " + String.valueOf(age);
 		return info;
+	}
+	
+	
+	public void aggiungiUtente(String name, String surname, int age) {
+		
+		this.name = name;
+		this.surname = surname;
+		this.age = age;
 	}
 
 	

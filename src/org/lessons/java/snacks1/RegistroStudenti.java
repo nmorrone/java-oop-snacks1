@@ -3,13 +3,12 @@ package org.lessons.java.snacks1;
 
 public class RegistroStudenti extends Studente{
 
-	String aula;
-	private String [] Studente;
+	String [] Studente;
 	
 	
 	RegistroStudenti(){
 		
-		String [] Studente;
+		this.aggiungiUtente(name, surname, age);
 		
 	}
 	
@@ -18,13 +17,13 @@ public class RegistroStudenti extends Studente{
 		this.name = name;
 		this.surname = surname;
 		this.age = age;
+
 	}
 
 	
 	public void stampaRegistro() {
 		for (int i = 0; i < Studente.length; i++) {
-			System.out.println();
-			
+
 		}
 	}
 }

@@ -9,7 +9,9 @@ public class RegistroStudenti extends Studente2{
 	
 	RegistroStudenti(String name){
 		
-		nameRegistro = name;
+		this.nameRegistro = name;
+		
+		studenti = new Studente2[20];
 		
 	}
 

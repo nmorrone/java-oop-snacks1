@@ -25,7 +25,7 @@ public class RegistroStudenti extends Studente2{
 		return this.nameRegistro;
 	}
 	
-	//metodo aggiunta utente array
+	//metodo aggiunta utente array con indicazione posizione
 	public void setAlunno(Studente2 s, int m) {
 		studenti[m] = s;
 	}
@@ -33,7 +33,7 @@ public class RegistroStudenti extends Studente2{
 	//meotodo stampa
 	void stampaRegistro() {
 		for (int i = 0; i < studenti.length; i++) {
-			System.out.print(studenti[i]);
+			System.out.print(studenti[i].getName());
 		}
 	}
 

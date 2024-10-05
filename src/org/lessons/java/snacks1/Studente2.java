@@ -3,23 +3,38 @@ package org.lessons.java.snacks1;
 public class Studente2{
 
 	
-	String name;
-	String surname;
+	private String name;
+	private String surname;
 
 	Studente2 (String name, String surname){
 		this.name = name;
 		this.surname = surname;
 		
 	}
-	
+
 	Studente2(){
-		setUtente(name, surname);
+		setName(name);
+		setSurname(surname);
 	}
+
 	
-	public void setUtente(String name, String surname) {
+	//apro metodi getter e setter
+	public void setName (String name) {
 		this.name = name;
-		this.surname = surname;
+		
 	}
 	
+	public String getName () {
+		return this.name;
+	}
+	
+	public void setSurname (String surname) {
+		this.surname = surname;
+		
+	}
+	
+	public String getSurname () {
+		return this.surname;
+	}
 	
 }

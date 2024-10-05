@@ -3,18 +3,30 @@ package org.lessons.java.snacks1;
 
 public class RegistroStudenti extends Studente2{
 	
-	public String nameRegistro;
+	private String nameRegistro;
 	private Studente2 [] studenti;
 	
 	
-	RegistroStudenti(String name){
+	RegistroStudenti(String name, int m){
 		
 		this.nameRegistro = name;
 		
-		studenti = new Studente2[20];
+		studenti = new Studente2[m];
 		
 	}
 
+	
+	//apro metodi getter e setter
+	public void setRegistro(String name) {
+		this.nameRegistro = name;
+	}
+	
+	public String getRegistro() {
+		return this.nameRegistro;
+	}
+	
+	
+	
 	
 	//meotodo stampa
 	void stampaRegistro() {
@@ -22,15 +34,6 @@ public class RegistroStudenti extends Studente2{
 			System.out.print(studenti[i].name);
 		}
 	}
-	
-	public void setUtente(String name, String surname) {
-		this.name = name;
-		this.surname = surname;
-	}
-	
-	public String getUtente() {
-		return (name + surname);
-	}
 
-	
+
 }

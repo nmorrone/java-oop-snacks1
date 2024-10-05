@@ -25,13 +25,15 @@ public class RegistroStudenti extends Studente2{
 		return this.nameRegistro;
 	}
 	
-	
-	
+	//metodo aggiunta utente array
+	public void setAlunno(Studente2 s, int m) {
+		studenti[m] = s;
+	}
 	
 	//meotodo stampa
 	void stampaRegistro() {
 		for (int i = 0; i < studenti.length; i++) {
-			System.out.print(studenti[i].name);
+			System.out.print(studenti[i]);
 		}
 	}
 

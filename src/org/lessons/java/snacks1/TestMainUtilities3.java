@@ -22,7 +22,7 @@ public class TestMainUtilities3 {
 		alunno4.setSurname("Rossi");
 		
 		//creo registro di classe
-		RegistroStudenti registro1 = new RegistroStudenti("Registro di Classe", 20);
+		RegistroStudenti registro1 = new RegistroStudenti("Registro di Classe", 4);
 		//aggiungo alunni al registro
 		registro1.setAlunno(alunno1, 0);
 		registro1.setAlunno(alunno2, 1);

@@ -37,4 +37,10 @@ public class Studente2{
 		return this.surname;
 	}
 	
+	//metodo toString
+	
+	public String toString() {
+		return String.format("Nome :%s, Cognome :%S", getName(), getSurname());
+	}
+	
 }

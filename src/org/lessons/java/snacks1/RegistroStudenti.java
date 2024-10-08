@@ -34,7 +34,7 @@ public class RegistroStudenti extends Studente2{
 	void stampaRegistro() {
 		for (int i = 0; i < studenti.length; i++) {
 			
-			System.out.print(studenti[i].name);
+			System.out.print(studenti[i].toString());
 		}
 	}
 
